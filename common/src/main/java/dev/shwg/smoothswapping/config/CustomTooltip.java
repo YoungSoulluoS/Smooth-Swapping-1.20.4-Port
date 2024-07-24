@@ -14,8 +14,8 @@ public class CustomTooltip extends Tooltip {
         this.widget = widget;
     }
 
-    @Override
+    /*@Override//todo test
     protected TooltipPositioner createPositioner(boolean hovered, boolean focused, ScreenRect focus) {
         return new CatmullRomWidget.CMRTooltipPosition(this.widget);
-    }
+    }*/
 }

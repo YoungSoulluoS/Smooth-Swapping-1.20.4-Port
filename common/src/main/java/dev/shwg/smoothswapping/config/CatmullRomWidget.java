@@ -4,7 +4,6 @@ import dev.shwg.smoothswapping.SwapUtil;
 import dev.shwg.smoothswapping.Vec2;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.narration.NarrationMessageBuilder;
-import net.minecraft.client.gui.tooltip.Tooltip;
 import net.minecraft.client.gui.tooltip.TooltipPositioner;
 import net.minecraft.client.gui.widget.ClickableWidget;
 import net.minecraft.screen.ScreenTexts;
@@ -14,6 +13,7 @@ import org.jetbrains.annotations.Nullable;
 import org.joml.Vector2i;
 import org.joml.Vector2ic;
 
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -35,7 +35,7 @@ public class CatmullRomWidget extends ClickableWidget {
         this.verticalLines = verticalLines;
         this.horizontalLines = horizontalLines;
         this.setTooltip(new CustomTooltip(this, Text.translatable("smoothswapping.config.option.animationspeed.tooltip")));
-        this.setTooltipDelay(1000);
+        this.setTooltipDelay(Duration.ofMillis(1000));
     }
 
     @Override

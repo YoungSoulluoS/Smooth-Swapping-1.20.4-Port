@@ -24,7 +24,7 @@ import static net.minecraft.client.gui.screen.ingame.HandledScreen.drawSlotHighl
 @SuppressWarnings("SuspiciousNameCombination")
 public class InventoryWidget extends ClickableWidget {
 
-    private static final Identifier TEXTURE = new Identifier("textures/gui/container/generic_54.png");
+    private static final Identifier TEXTURE = Identifier.ofVanilla("textures/gui/container/generic_54.png");
 
     private static final int textureWidth = 176;
     private static final int textureHeight = 222;
